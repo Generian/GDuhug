@@ -9,10 +9,15 @@
     <meta name="author" content="SitePoint" />
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <h1>Uhug's Rätselbox</h1>
+    <h1 class="redtext">Uhug's Rätselbox</h1>
 
     <h2>Der Geburtstagskuchen</h2>
 
@@ -20,7 +25,7 @@
       Zu Uhug's tollem Jubiläum darf natürlich eine B-Day-Torte nicht fehlen:
     </p>
 
-    <p class="letsbake" >Let's bake a cake!</p>
+    <p class="letsbake">Let's bake a cake!</p>
 
     <p>Zutaten für den Teig</p>
 
@@ -37,25 +42,17 @@
 
     <div>
       <img
-      style="width: 880px; height: 600px"
-      alt="Geburtstagskuchen"
-      src="assets/kuchen.jpeg"
-    />
+        style="width: 880px; height: 600px"
+        alt="Geburtstagskuchen"
+        src="assets/kuchen.jpeg"
+      />
     </div>
 
     <span>Lösungswort:</span>
-    <input id="password" type="password">
+    <input id="password" type="password" />
 
     <p>Hint:</p>
 
     <script src="js/scripts.js"></script>
-    <script>
-      document.write(
-        '<script src="http://' +
-          (location.host || "${1:localhost}").split(":")[0] +
-          ':${2:35729}/livereload.js?snipver=1"></' +
-          "script>"
-      );
-    </script>
   </body>
 </html>
