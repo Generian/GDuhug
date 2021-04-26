@@ -1,0 +1,12 @@
+body {
+  background-color: rgba(255, 210, 168, 0.973); 
+}
+
+h1 {
+  text-align: center;
+}
+
+.letsbake {
+  color: rgb(255, 153, 204);
+  font-size: larger;
+}
