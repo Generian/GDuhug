@@ -3,14 +3,20 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1,h2 {
+h1,h2,h3,p,div {
   text-align: center;
 }
 
 .letsbake {
   color: rgb(255, 153, 204);
-  font-size: larger;
+  font-size: xx-large;
 }
-.redtext {
+.haupttitel {
   color: red
+}
+.raetselname {
+  color: rgb(50, 138, 209)
+}
+.loesungswort {
+  text-align: center;
 }

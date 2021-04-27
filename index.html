@@ -17,9 +17,9 @@
   </head>
 
   <body>
-    <h1 class="redtext">Uhug's Rätselbox</h1>
+    <h1 class="haupttitel">Uhug's Rätselbox</h1>
 
-    <h2>Der Geburtstagskuchen</h2>
+    <h2 class="raetselname">Der Geburtstagskuchen</h2>
 
     <p>
       Zu Uhug's tollem Jubiläum darf natürlich eine B-Day-Torte nicht fehlen:
@@ -27,11 +27,11 @@
 
     <p class="letsbake">Let's bake a cake!</p>
 
-    <p>Zutaten für den Teig</p>
+    <h3>Zutaten für den Teig</h3>
 
     <p>
-      8 Eier, <br />
-      1 Prise Salz,<br />
+      8 Eier <br />
+      1 Prise Salz<br />
       200 g Butter<br />
       300 g Zucker<br />
       1 TL Backpulver<br />
@@ -42,16 +42,24 @@
 
     <div>
       <img
-        style="width: 880px; height: 600px"
+        style="width: 880px; height: 600px;padding-top: 20px;padding-bottom: 30px"
         alt="Geburtstagskuchen"
         src="assets/kuchen.jpeg"
       />
     </div>
 
-    <span>Lösungswort:</span>
-    <input id="password" type="password" onkeydown="checkPassword(this)"/>
+    <p><span><b>Lösungswort:</b>
+    <input id="password" type="text" onkeydown="checkPassword(this)"/>
+  <input value="prüfen" type="submit"></span></p>
 
-    <p>Hint:</p>
+    
+    <div>
+      <img
+        style="width: 35px; height: 35px; padding-top: 30px;padding-bottom: 30px"
+        alt="Hint"
+        src="assets/hint.jpeg"
+      />
+    </div>
 
     <script src="js/scripts.js"></script>
   </body>
