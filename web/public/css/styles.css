@@ -1,6 +1,6 @@
 body {
   background-color: rgba(255, 210, 168, 0.973); 
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif; 
 }
 
 h1,h2,h3,p {
@@ -52,7 +52,7 @@ h1,h2,h3,p {
 }
 
 .passwortBox {
-  background-color: #d3ccbdef;
+  background-color: #a1a9b3ef;
   color: rgb(3, 3, 3);
   width: 400px;
   border: 1px solid rgb(90, 88, 88);
@@ -71,3 +71,4 @@ img {
   padding-top: 20px;
   padding-bottom: 40px;
 }
+
