@@ -21,62 +21,42 @@
 
     <h2 class="raetselname">Rätseljunkie</h2>
 
-    <p style="color: rgb(187, 188, 196)">
+    <p class="pgrau">
       Ohhh ja, mit dem guten alten Archibald fing es so richtig an <br />und zog
       uns auf der Stelle in den Bann!
     </p>
     <div>
-      <img
-        style="
-          width: 285px;
-          height: 440px;
-          padding-top: 20px;
-          padding-bottom: 20px;
-        "
-        alt="Archibald"
-        src="/assets/Archibald.png"
-      />
+      <img alt="Archibald" src="/assets/Archibald.png" />
     </div>
-    <p style="color: rgb(187, 188, 196)">
-      Wir irrten virtuell durch so manch altes Gemäuer...
-    </p>
+    <p class="pgrau">Wir irrten virtuell durch so manch altes Gemäuer...</p>
 
     <div>
-      <img
-        style="padding-top: 20px; padding-bottom: 20px"
-        alt="altes Gemäuer"
-        src="/assets/Altes_Gemaeuer.png"
-      />
+      <img alt="altes Gemäuer" src="/assets/Altes_Gemaeuer.png" />
     </div>
-    <p style="color: rgb(187, 188, 196)">
+
+    <p class="pgrau">
       ... und waren oft wie blind, sahen einfach das Naheliegendste nicht.
       <br />
-      Dabei wäre es doch so einfach gewesen! <br /><br /><br />Wo hütet Archibald sein
-      Geheimnis?
+      Dabei wäre es doch so einfach gewesen! <br /><br /><br />Wo hütet
+      Archibald sein Geheimnis?
     </p>
-    <p style="color: rgb(50, 138, 209)">
-      <span
-        ><b>Lösungswort:</b>
-        <input id="password" type="text" onkeydown="checkPassword(this)" />
-        <input value="prüfen" type="submit"
-      /></span>
-    </p>
-    <p style="color: rgb(86, 86, 92)">
-      (Format bbzbbzz / b=Buchstabe, z=Ziffer)
-    </p>
-    <div>
+
+    <div class="passwortBox">
+      <form id="passwordForm">
+        <label for="password">Lösungswort:</label><br />
+        <input type="text" id="password" name="password" /><br />
+        <input type="submit" value="Prüfen" />
+      </form>
+       
+      <p class="pdugrau">(Format bbzbbzz / b=Buchstabe, z=Ziffer)</p>
+    </div>
+
+    <div class="hint">
       <img
-        style="
-          width: 35px;
-          height: 35px;
-          padding-top: 30px;
-          padding-bottom: 30px;
-        "
         alt="Hint"
         title="Ich hab wohl Tomaten auf den Augen!"
         src="/assets/hint.png"
       />
     </div>
-
   </body>
 </html>
