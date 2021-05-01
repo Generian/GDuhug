@@ -33,3 +33,13 @@ const checkPassword = (event) => {
 
 const form = document.getElementById('passwordForm');
 form.addEventListener('submit', checkPassword);
+
+// Show hint
+
+const hint_icon = $( "#hint_icon" );
+const hint = $( "#hint" );
+
+$( "#hint_icon" ).on( "click", function( event ) {
+  hint.show();
+  hint_icon.hide();
+});

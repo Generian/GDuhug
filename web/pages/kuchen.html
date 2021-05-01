@@ -14,6 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   </head>
 
   <body>
@@ -54,10 +56,10 @@
 
     <!-- checkPassword(this) -->
 
-    <div class="hint">
-      <img alt="Hint" title="Ich habe keine Ahnung!" src="/assets/hint.png" />
+    <div class="hint_container">
+      <img id="hint_icon" alt="Hint" title="Ich habe keine Ahnung!" src="/assets/hint.png" />
+      <p id="hint" class="hint">Hint: Kerzen</p>
     </div>
-    <p>Hint einblenden: Kerzen</p>
 
     <script src="/js/scripts.js"></script>
   </body>
