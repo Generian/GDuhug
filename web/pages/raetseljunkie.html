@@ -14,14 +14,16 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
-  <body style="background-color: rgb(19, 21, 26)">
-    <h1 class="haupttitel">Uhug's Rätselbox</h1>
+  <body style="background-color: rgb(35, 39, 48)">
+    <div class="headerBox">
+      <h1 class="haupttitel">Uhug's Rätselbox</h1>
+      <h2 class="raetselname">Rätseljunkie</h2>
+    </div>
 
-    <h2 class="raetselname">Rätseljunkie</h2>
-
-    <p class="pgrau">
+    <p class="pgrau"> <br>
       Ohhh ja, mit dem guten alten Archibald fing es so richtig an <br />und zog
       uns auf der Stelle in den Bann!
     </p>
@@ -47,16 +49,21 @@
         <input type="text" id="password" name="password" /><br />
         <input type="submit" value=" prüfen " />
       </form>
-    </div>   
-      <p class="pdugrau">(Format bbzbbzz / b=Buchstabe, z=Ziffer)</p>
-    
+    </div>
+    <p class="pdugrau">(Format bbzbbzz / b=Buchstabe, z=Ziffer)</p>
 
-    <div class="hint">
+    <!-- checkPassword(this) -->
+
+    <div class="hint_container">
       <img
+        id="hint_icon"
         alt="Hint"
         title="Ich seh nix! Bitte hilf mir!"
         src="/assets/hint.png"
       />
+      <p id="hint" class="hint">Hint: Fenster</p>
     </div>
+    
+    <script src="/js/scripts.js"></script>
   </body>
 </html>

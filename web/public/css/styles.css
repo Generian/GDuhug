@@ -13,7 +13,7 @@ h1,h2,h3,p {
 }
 
 .haupttitel {
-  color: red
+  color: rgb(146, 70, 102)
 }
 
 .raetselname {
@@ -62,14 +62,27 @@ h1,h2,h3,p {
   display: none;
 }
 
+.headerBox {
+  color: rgb(255, 0, 0);
+  max-width: 800px;
+  border: 5px ridge rgb(161, 161, 161);
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow:   rgba(0,0,0,0.4) 10px 10px;
+  background-image: url(/assets/Fragezeichen.png);
+  
+}
+
 .passwortBox {
-  background-color: #a1a9b3ef;
+  background-color: rgba(255, 255, 255, .4);
   color: rgb(3, 3, 3);
-  width: 400px;
+  max-width: 400px;
   border: 1px solid rgb(90, 88, 88);
   margin: 10px auto;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
   padding-top: 10px;
 }
