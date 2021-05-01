@@ -6,17 +6,22 @@ const connectLivereload = require("connect-livereload")
 
 const PORT = process.env.PORT || 3000
 
-const liveReloadServer = livereload.createServer()
-liveReloadServer.watch(path.join(__dirname, 'web'))
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
+if (PORT === 3000) {
+  const liveReloadServer = livereload.createServer()
+  liveReloadServer.watch(path.join(__dirname, 'web'))
+  liveReloadServer.server.once("connection", () => {
+    setTimeout(() => {
+      liveReloadServer.refresh("/");
+    }, 100);
 });
+}
 
 const app = express()
 
-app.use(connectLivereload())
+if (PORT === 3000) {
+  app.use(connectLivereload())
+}
+
 app.use(express.static('web/public'))
 
 var jsonParser = bodyParser.json()
