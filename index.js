@@ -30,7 +30,7 @@ app.get('/kuchen', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/kuchen.html'));
 })
 
-app.get('/kuchen_loesung', (req, res) => {
+app.get('/sachertorte', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/kuchen_loesung.html'));
 })
 
@@ -38,19 +38,32 @@ app.get('/raetseljunkie', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/raetseljunkie.html'));
 })
 
-app.get('/raetseljunkie_loesung', (req, res) => {
+app.get('/gc5pw12', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/raetseljunkie_loesung.html'));
 })
 
 // API methods
-app.post('/api/password/first/', jsonParser, (req, res) => {
+
+const correctPassword = {
+  "/kuchen": {
+    password: "sachertorte",
+    link: "/sachertorte",
+  },
+  "/raetseljunkie": {
+    password: "gc5pw12",
+    link: "/gc5pw12",
+  },
+}
+
+app.post('/api/password/', jsonParser, (req, res) => {
   try {
     const pw = req.body.password
-    console.log("Submitted password:", pw)
-    if (pw === 'sachertorte') {
+    const page = req.body.page
+    console.log("Submitted password:", pw, "Submitted page: ", page)
+    if (correctPassword[page] && pw === correctPassword[page].password) {
       return res.json({
         correct_pw: true,
-        link: "/kuchen_loesung",
+        link: correctPassword[page].link,
       })
     } else {
       return res.json({

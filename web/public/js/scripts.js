@@ -1,14 +1,15 @@
 const checkPassword = (event) => {
   event.preventDefault();
   console.log("pw submitted")
-  const passwordInput = document.getElementById('password');
-  const pw = passwordInput.value  
+  const passwordInput = $( '#password' )
+  const pw = passwordInput.val()  
   try {
     const data = {
-      password: pw.trim().toLowerCase()
+      password: pw.trim().toLowerCase(),
+      page: window.location.pathname,
     }
 
-    fetch("/api/password/first/", {
+    fetch("/api/password/", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -21,8 +22,7 @@ const checkPassword = (event) => {
       if (parsed_data.correct_pw) {
         window.location.href = parsed_data.link
       } else {
-        console.log("wrong password")
-        console.log(data)
+        console.log("wrong password", data)
       }
     })
     .catch(err => console.error(err))
@@ -31,11 +31,11 @@ const checkPassword = (event) => {
   }     
 }
 
-const form = document.getElementById('passwordForm');
-form.addEventListener('submit', checkPassword);
+// Check password on Kuchen page
+const form = $( '#passwordForm' )
+form.on('submit', checkPassword)
 
-// Show hint
-
+// Show hint on any page
 const hint_icon = $( "#hint_icon" );
 const hint = $( "#hint" );
 
