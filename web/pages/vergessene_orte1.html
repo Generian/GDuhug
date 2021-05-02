@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="utf-8" />
 
-    <title>vergessene_orte1</title>
-    <meta name="description" content="vergessene_orte1" />
+    <title>vergessene_orte</title>
+    <meta name="description" content="vergessene_orte" />
     <meta name="author" content="engelchen62" />
 
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body style="background-color: rgb(212, 228, 228)">
-    <h1 class="haupttitel">Uhug's Rätselbox</h1>
-
-    <h2 class="raetselname">Vergessene Orte 1</h2>
-
-    <p>
+    <div class="headerBox">
+      <div class="headerBoxInside">
+      <h1 class="haupttitel">Uhug's Rätselbox</h1>
+      <h2 class="raetselname">Vergessene Orte</h2>
+      </div>
+    </div>
+    
+    <div class="textBox">
+    <p><br>
       Wie unglaublich spannend war auch das Erforschen von LP’s auf der ganzen
       Welt, ohne auch nur einen Fuß vor die Tür zu setzen… (siehe Leirum’s
       GC6EJ8X und Knickohr’s …).
 
       <br />Machen wir doch gleich mal einen kleinen Ausflug zu einem Ort, den
       wir es besonders faszinierend fanden: <br /><br />Begib dich nach S77
-      38.171 E166 25.039 , nimm das kleine gelbe Männlein an der Hand und schau
-      dich ein wenig um. 1. Auf welchem Kontinent befindest Du dich? (A)
-      <br /><br />
-      2. Wessen Behausung war das? (B)<br />
-      3. Finde das Objekt. Was für ein Begriff steht inGroßbuchstaben darunter?
-      (C)
+      38.171 E166 25.039, nimm das kleine gelbe Männlein an der Hand und schau dich ein wenig um. 
+      <br><br>
+      <ol><li>Auf welchem Kontinent befindest Du Dich? (<strong>A</strong>)</li>
+      <li>Wessen Behausung war das? (<strong>B</strong>)</li>
+      <li>Finde das Objekt. Was für ein Begriff steht in Großbuchstaben darunter?
+      (<strong>C</strong>)</li>      
     </p>
+
     <div>
       <img alt="Suche mich" src="/assets/Such_mich.png" />
     </div>
-    <p>4. In welchem Jahr wurde die Hütte erbaut?</p>
 
+    <li>In welchem Jahr wurde die Hütte erbaut?
+      (<strong>D</strong>)</li>
+
+  </ol>
+</div>
     <div class="passwortBox">
       <form id="passwordForm">
         <label for="password">Lösungswort ABCD:</label><br />
@@ -47,7 +56,7 @@
         <input type="submit" value=" prüfen " />
       </form>
     </div>
-
+    <p>alle 4 Begriffe aneinanderreihen, ohne Leerzeichen</p>
     <!-- checkPassword(this) -->
 
     <div class="hint_container">
@@ -57,11 +66,11 @@
         title="Was muss ich tun?"
         src="/assets/hint.png"
       />
-      <p id="hint" class="hint">Hint: Google StreetView</p>
+      <p id="hint" class="hint">Google StreetView</p>
     </div>
 
     <script src="/js/scripts.js"></script>
 
-    <p>alle 4 Begriffe aneinanderreihen, ohne Leerzeichen</p>
+    
   </body>
 </html>

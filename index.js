@@ -42,6 +42,18 @@ app.get('/gc5pw12', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/raetseljunkie_loesung.html'));
 })
 
+app.get('/vergessene_orte1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/vergessene_orte1.html'));
+})
+
+app.get('/ScottsHuette', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/Vergessene_Orte1_loesung.html'));
+})
+
+app.get('/LPBeelitz', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/LPBeelitz.html'));
+})
+
 // API methods
 
 const correctPassword = {
@@ -52,6 +64,10 @@ const correctPassword = {
   "/raetseljunkie": {
     password: "gc5pw12",
     link: "/gc5pw12",
+  },
+  "/vergessene_orte1": {
+    password: "antarktisscottflour1911",
+    link: "/ScottsHuette",
   },
 }
 
@@ -64,26 +80,6 @@ app.post('/api/password/', jsonParser, (req, res) => {
       return res.json({
         correct_pw: true,
         link: correctPassword[page].link,
-      })
-    } else {
-      return res.json({
-        correct_pw: false,
-        link: "",
-      })
-    }
-  } catch {
-    return res.status(400).json({ error: 'no password sent' })
-  }
-})
-
-app.post('/api/password/first/', jsonParser, (req, res) => {
-  try {
-    const pw = req.body.password
-    console.log("Submitted password:", pw)
-    if (pw === 'gc5pw12') {
-      return res.json({
-        correct_pw: true,
-        link: "/raetseljunkie_loesung",
       })
     } else {
       return res.json({
