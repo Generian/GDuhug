@@ -23,6 +23,8 @@ const checkPassword = (event) => {
         window.location.href = parsed_data.link
       } else {
         console.log("wrong password", data)
+        $( "#pwfalsch" ).show();
+        setTimeout(function(){ $( "#pwfalsch" ).hide(); }, 2000);
       }
     })
     .catch(err => console.error(err))
@@ -36,10 +38,9 @@ const form = $( '#passwordForm' )
 form.on('submit', checkPassword)
 
 // Show hint on any page
-const hint_icon = $( "#hint_icon" );
-const hint = $( "#hint" );
 
 $( "#hint_icon" ).on( "click", function( event ) {
-  hint.show();
-  hint_icon.hide();
+  $( "#hint" ).toggle();
+  // hint_icon.hide();
 });
+

@@ -18,15 +18,16 @@
   </head>
 
   <body>
-    <div class="headerBox">
+    <div class="maindiv">
+      <div class="headerBox">
       <div class="headerBoxInside">
         <h1 class="haupttitel">Uhug's Rätselbox</h1>
         <h2 class="raetselname">Der Geburtstagskuchen</h2>
       </div>
-    </div>
-    <div class="textBox">
+      </div>
+      <div class="textBox">
       <p>
-        Ein krasses Jubiläum braucht ganz klar ne krasse B-Day-Torte! Also ran
+        <h2>So ein krasses Jubiläum</h2> ... braucht ganz klar ne krasse B-Day-Torte! Also ran
         an die Schüssel...
       </p>
 
@@ -47,19 +48,20 @@
       <div>
         <img alt="Geburtstagskuchen" src="/assets/bdaykuchen.png" />
       </div>
-    </div>
+      </div>
 
-    <div class="passwortBox">
+     <div class="passwortBox">
       <form id="passwordForm">
         <label for="password">Lösungswort:</label><br />
-        <input type="text" id="password" name="password" /><br />
+        <input type="text" id="password" name="password" autocomplete="off"/><br />
+        <label id="pwfalsch">Gaaanz falsch!</label><br>
         <input type="submit" value=" prüfen " />
       </form>
-    </div>
+     </div>
 
-    <!-- checkPassword(this) -->
+     <!-- checkPassword(this) -->
 
-    <div class="hint_container">
+     <div class="hint_container">
       <img
         id="hint_icon"
         alt="Hint"
@@ -68,7 +70,8 @@
       />
       <p id="hint" class="hint">Schau Dir die Kerzen genauer an!</p>
     </div>
-
+</div>
     <script src="/js/scripts.js"></script>
+      
   </body>
 </html>

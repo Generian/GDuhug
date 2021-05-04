@@ -16,7 +16,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
-  <body style="background-color: rgb(212, 228, 228)">
+  <body class="bgreisblau">
+    <div class="maindiv">
     <div class="headerBox">
       <div class="headerBoxInside">
       <h1 class="haupttitel">Uhug's Rätselbox</h1>
@@ -26,14 +27,14 @@
     
     <div class="textBox">
     <p>
-      Wie unglaublich spannend war auch das Erforschen von LP’s auf der ganzen
-      Welt, ohne auch nur einen Fuß vor die Tür zu setzen… (siehe Leirum’s
-      GC6EJ8X und Knickohr’s …).
+      <h2>Wie unglaublich spannend... </h2>...war auch das Erforschen von Lost Places auf der ganzen
+      Welt, <br>ohne auch nur einen Fuß vor die Tür zu setzen… (wie z.B. <a href="https://coord.info/GC6EJ8X">Leirums Lost Places World Tour</a>) 
 
-      <br /><br>Machen wir doch gleich mal einen kleinen Ausflug zu einem Ort, den
-      wir es besonders faszinierend fanden: <br /><br />Begib dich nach S77
-      38.171 E166 25.039, nimm das kleine gelbe Männlein an der Hand und schau dich ein wenig um. 
-      <br><br>
+      <br /><br>Machen wir doch gleich mal einen kleinen Ausflug zu einem Ort, <br>den
+      wir es besonders faszinierend fanden: <br /><br />Begib dich nach S77° 38.171 E166° 25.039, <br>nimm das kleine gelbe Männlein an der Hand und schau dich ein wenig um. 
+      <br></div>
+            <div class="textBox">
+    
       <ol><li>Auf welchem Kontinent befindest Du Dich? (<strong>A</strong>)</li>
       <li>Wessen Behausung war das? (<strong>B</strong>)</li>
       <li>Finde das Objekt. Was für ein Begriff steht in Großbuchstaben darunter?
@@ -44,7 +45,7 @@
       <img alt="Suche mich" src="/assets/Such_mich.png" />
     </div>
 
-    <li>In welchem Jahr wurde die Hütte erbaut?
+    <li>In welchem Jahr wurde das Gebäude erbaut?
       (<strong>D</strong>)</li>
 
   </ol>
@@ -52,7 +53,8 @@
     <div class="passwortBox">
       <form id="passwordForm">
         <label for="password">Lösungswort ABCD:</label><br />
-        <input type="text" id="password" name="password" /><br />
+        <input type="text" id="password" name="password" autocomplete="off" /><br />
+        <label id="pwfalsch">Gaaanz falsch!</label><br>
         <input type="submit" value=" prüfen " />
       </form>
     </div>
@@ -70,7 +72,6 @@
     </div>
 
     <script src="/js/scripts.js"></script>
-
-    
+ </div>   
   </body>
 </html>

@@ -17,7 +17,8 @@
   </head>
 
   <body style="background-color: rgba(73, 104, 87, 0.705)">
-    <div class="headerBox">
+    <div class="maindiv">
+      <div class="headerBox">
       <div class="headerBoxInside">
         <h1 class="haupttitel">Uhug's Rätselbox</h1>
         <h2 class="raetselname">Beelitz Heilstätten</h2>
@@ -25,7 +26,7 @@
     </div>
     <div class="textBox">
       <p>
-        Doch warum in die Ferne schweifen, wenn das Gute liegt so nah? Zum
+        Doch warum in die Ferne schweifen, wenn das Gute liegt so nah? <br>Zum
         Beispiel die Beelitz Heilstätten bei Berlin – ein riesiges Areal mit
         über 60 Gebäuden, und ein unfassbar fesselnder Ort mit morbidem Charme
         und Gruselfaktor, ein MUSS für jeden LP-Liebhaber!
@@ -41,7 +42,8 @@
     <div class="passwortBox">
       <form id="passwordForm">
         <label for="password">Lösungswort:</label><br />
-        <input type="text" id="password" name="password" /><br />
+        <input type="text" id="password" name="password" autocomplete="off"/><br />
+        <label id="pwfalsch">Gaaanz falsch!</label><br>
         <input type="submit" value=" prüfen " />
       </form>
     </div>
@@ -53,6 +55,7 @@
       <p id="hint" class="hint">weiß ich noch nicht...</p>
     </div>
 
-    <script src="/js/scripts.js"></script>
+    <script src="/js/scripts.js"></script></div>
+    
   </body>
 </html>
