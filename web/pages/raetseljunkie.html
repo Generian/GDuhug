@@ -17,58 +17,64 @@
   </head>
 
   <body class="bgrdugrau">
-    <div class="maindiv"><div class="headerBox">
-      <div class="headerBoxInside">
-        <h1 class="haupttitel">Uhug's Rätselbox</h1>
-        <h2 class="raetselname">Rätseljunkie</h2>
-      </div>
-    </div>
-
-    <div class="textBox">
-      <p class="pgrau">
-        Ohhh ja, mit dem guten alten Archibald fing es so richtig an <br />und er
-        zog uns auf der Stelle in den Bann!
-      </p>
-      <div>
-        <img alt="Archibald" src="/assets/Archibald.png" />
-      </div>
-      <p class="pgrau">Wir irrten virtuell durch so manch altes Gemäuer...</p>
-
-      <div>
-        <img alt="altes Gemäuer" src="/assets/Altes_Gemaeuer.png" />
+    <div class="maindiv">
+      <div class="headerBox">
+        <div class="headerBoxInside">
+          <h1 class="haupttitel">Uhug's Rätselbox</h1>
+          <h2 class="raetselname">Rätseljunkie</h2>
+        </div>
       </div>
 
-      <p class="pgrau">
-        ... und waren oft wie blind, sahen einfach das Naheliegendste nicht.
-        <br />
-        Dabei wäre es doch so einfach gewesen! <br /><br /><br />Wo hütet
-        Archibald sein Geheimnis?
-      </p>
+      <div class="textBox">
+        <p class="pgrau">
+          Ohhh ja, mit dem guten alten Archibald fing es so richtig an <br />und
+          er zog uns auf der Stelle in den Bann!
+        </p>
+        <div>
+          <img alt="Archibald" src="/assets/Archibald.png" />
+        </div>
+        <p class="pgrau">Wir irrten virtuell durch so manch altes Gemäuer...</p>
+
+        <div>
+          <img alt="altes Gemäuer" src="/assets/Altes_Gemaeuer.png" />
+        </div>
+
+        <p class="pgrau">
+          ... und waren oft wie blind, sahen einfach das Naheliegendste nicht.
+          <br />
+          Dabei wäre es doch so einfach gewesen! <br /><br />Wo hütet
+          Archibald sein Geheimnis?
+        </p>
+      </div>
+
+      <div class="passwortBox">
+        <form id="passwordForm">
+          <label for="password">Lösungswort:</label><br />
+          <input
+            type="text"
+            id="password"
+            name="password"
+            autocomplete="off"
+          /><br />
+          <label id="pwfalsch">Gaaanz falsch!</label><br />
+          <input type="submit" value=" prüfen " />
+        </form>
+      </div>
+      <p class="pdugrau">(Format bbzbbzz / b=Buchstabe, z=Ziffer)</p>
+
+      <!-- checkPassword(this) -->
+
+      <div class="hint_container">
+        <img
+          id="hint_icon"
+          alt="Hint"
+          title="Ich seh nix! Bitte hilf mir!"
+          src="/assets/hint.png"
+        />
+        <p id="hint" class="hint">Guck mal durch die Fenster</p>
+      </div>
+
+      <script src="/js/scripts.js"></script>
     </div>
-
-    <div class="passwortBox">
-      <form id="passwordForm">
-        <label for="password">Lösungswort:</label><br />
-        <input type="text" id="password" name="password" autocomplete="off"/><br />
-        <label id="pwfalsch">Gaaanz falsch!</label><br>
-        <input type="submit" value=" prüfen " />
-      </form>
-    </div>
-    <p class="pdugrau">(Format bbzbbzz / b=Buchstabe, z=Ziffer)</p>
-
-    <!-- checkPassword(this) -->
-
-    <div class="hint_container">
-      <img
-        id="hint_icon"
-        alt="Hint"
-        title="Ich seh nix! Bitte hilf mir!"
-        src="/assets/hint.png"
-      />
-      <p id="hint" class="hint">Guck mal durch die Fenster</p>
-    </div>
-
-    <script src="/js/scripts.js"></script>
-</div>
-      </body>
+  </body>
 </html>

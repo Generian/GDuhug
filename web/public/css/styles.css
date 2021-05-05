@@ -20,8 +20,22 @@ body {
   background-color: rgb(212, 228, 228)
 }
 
+.bgbraun {
+  background-color: rgb(78, 42, 12)
+}
+
+ol { 
+  padding-left: 1em;
+  text-align: left;
+}
+
+.abstand li {
+  position: relative;
+  left: 150px;
+}
+
 a {
-  color: rgb(146, 70, 102);
+  color: rgb(151, 109, 126);
 }
 
 h1,
@@ -50,12 +64,22 @@ h4 {
   color: rgb(50, 138, 209);
 }
 
+.phbraun {
+  color: rgb(228, 197, 168);
+}
+
+.pdubraun {
+  color: rgb(73, 47, 21);
+  font-size: large;
+  font-weight: bold;
+}
+
 .pgrau {
   color: rgb(187, 188, 196);
 }
 
 .pdugrau {
-  color: rgb(86, 86, 92);
+  color: rgb(121, 121, 121);
 }
 
 .pblau {
@@ -152,7 +176,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: 700px;
   width: auto;
   height: auto;
   padding-top: 20px;

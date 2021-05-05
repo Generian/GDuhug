@@ -54,6 +54,13 @@ app.get('/LPBeelitz', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/LPBeelitz.html'));
 })
 
+app.get('/kaffeetante', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/kaffeetante.html'));
+})
+
+app.get('/puzzlemaniaaa', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/puzzlemaniaaa.html'));
+})
 // API methods
 
 const correctPassword = {
@@ -68,6 +75,18 @@ const correctPassword = {
   "/vergessene_orte1": {
     password: "antarktisscottflour1911",
     link: "/ScottsHuette",
+  },
+  "/LPBeelitz": {
+    password: "pianist",
+    link: "/kaffeetante",
+  },
+  "/kaffeetante": {
+    password: "eiweißshake",
+    link: "/puzzlemaniaaa",
+  },
+  "/puzzlemaniaaa": {
+    password: "strigidae",
+    link: "/kuchen",
   },
 }
 
