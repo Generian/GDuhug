@@ -85,7 +85,7 @@ const correctPassword = {
     link: "/puzzlemaniaaa",
   },
   "/puzzlemaniaaa": {
-    password: "strigidae",
+    password: "entspannung",
     link: "/kuchen",
   },
 }
