@@ -61,6 +61,18 @@ app.get('/kaffeetante', (req, res) => {
 app.get('/puzzlemaniaaa', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/puzzlemaniaaa.html'));
 })
+
+app.get('/agententraining', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/Agententraining.html'));
+})
+
+app.get('/tiere', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/einherzfuertiere.html'));
+})
+
+app.get('/bonus', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/bonus.html'));
+})
 // API methods
 
 const correctPassword = {
@@ -77,7 +89,7 @@ const correctPassword = {
     link: "/ScottsHuette",
   },
   "/LPBeelitz": {
-    password: "pianist",
+    password: "flügel",
     link: "/kaffeetante",
   },
   "/kaffeetante": {
@@ -86,6 +98,18 @@ const correctPassword = {
   },
   "/puzzlemaniaaa": {
     password: "entspannung",
+    link: "/agententraining",
+  },
+  "/agententraining": {
+    password: "mia4ever",
+    link: "/tiere",
+  },
+  "/tiere": {
+    password: "tiere",
+    link: "/bonus",
+  },
+  "/bonus": {
+    password: "bonus",
     link: "/kuchen",
   },
 }
