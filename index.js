@@ -101,7 +101,7 @@ const correctPassword = {
     link: "/agententraining",
   },
   "/agententraining": {
-    password: "mia4ever",
+    password: "moeskeeto",
     link: "/tiere",
   },
   "/tiere": {
