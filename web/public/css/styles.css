@@ -202,3 +202,19 @@ img {
 .imgklein {
   max-width: 250px;
 }
+
+.imgmini {
+  max-width: 100px;
+}
+
+.imgunsichtbar {
+  display: none;
+}
+
+.dreh {
+  transition-duration: 4.0s;
+ }
+ 
+.dreh:hover {
+  transform: rotateY(360deg);
+}

@@ -44,3 +44,9 @@ $( "#hint_icon" ).on( "click", function( event ) {
   // hint_icon.hide();
 });
 
+var $sound = $('<div id="sound" />').appendTo('body');
+$('#special-links-that-play-annoying-sounds-when-hovered a').hover(function() {
+ $sound.html('<embed src="flymetothemoon.mp3" hidden="true" autostart="true" loop="false">');
+}, function() {
+ // We could empty the innerHTML of $sound here, but that would only slow things down.
+});
