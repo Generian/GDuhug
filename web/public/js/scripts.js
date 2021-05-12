@@ -44,9 +44,23 @@ $( "#hint_icon" ).on( "click", function( event ) {
   // hint_icon.hide();
 });
 
-var $sound = $('<div id="sound" />').appendTo('body');
-$('#special-links-that-play-annoying-sounds-when-hovered a').hover(function() {
- $sound.html('<embed src="flymetothemoon.mp3" hidden="true" autostart="true" loop="false">');
-}, function() {
- // We could empty the innerHTML of $sound here, but that would only slow things down.
-});
+// Buzzer drücken
+
+function changeImage() {
+
+  if (document.getElementById("imgClickAndChange").src = "/assets/Spelunkenbeamer.png") 
+  {
+      document.getElementById("imgClickAndChange").src = "/assets/Spelunkenbeamer_down.png";
+      // Abspielen Sounds
+      document.getElementById('audiofile').play();
+      // langsames Einblenden des Passierscheins
+      $( ".imgfahrkarte" ).show(8000);
+      $( ".imgfahrkarte" ).hide(8000);
+  }
+  else 
+  {
+    // das Ausschalten funktioniert aber nicht 
+    document.getElementById("imgClickAndChange").src = "/assets/Spelunkenbeamer.png";
+      document.getElementById('audiofile').pause();
+  }
+}
