@@ -98,7 +98,7 @@ ol {
 }
 
 .pdubraun {
-  color: rgb(73, 47, 21);
+  color: rgb(148, 112, 77);
   font-size: large;
   font-weight: bold;
 }
@@ -119,8 +119,8 @@ ol {
   color: rgb(50, 138, 209);
 }
 
-.pmia {
-  color: rgba(137, 151, 5, 0.856);
+.pbild {
+  color: rgba(75, 83, 0, 0.856);
   font-size: small;
 }
 
@@ -223,7 +223,7 @@ img {
   width: 100%;
   height: auto;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .imgmittel {
