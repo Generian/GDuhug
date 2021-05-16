@@ -101,11 +101,11 @@ const correctPassword = {
     link: "/agententraining",
   },
   "/agententraining": {
-    password: "moeskeeto",
+    password: "moeskeetogelb",
     link: "/tiere",
   },
   "/tiere": {
-    password: "pferdhelios",
+    password: "leipzigpferdhelios",
     link: "/bonus",
   },
   "/bonus": {
