@@ -105,7 +105,7 @@ const correctPassword = {
     link: "/tiere",
   },
   "/tiere": {
-    password: "leipzigpferdhelios",
+    password: "leipzigpferdheliosuhu",
     link: "/bonus",
   },
   "/bonus": {
