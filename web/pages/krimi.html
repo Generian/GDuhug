@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Krimi</title>
+    <meta name="description" content="krimi" />
+    <meta name="author" content="engelchen62" />
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body class="bgrdugrau">
+    <div class="maindiv">
+      <div class="headerBox">
+        <div class="headerBoxInside">
+          <h1 class="haupttitel">Uhug's Rätselbox</h1>
+          <h2 class="raetselname">Ohne Krimi ...</h2>
+        </div>
+      </div>
+
+      <audio id="audiofile" autoplay loop
+             src="/assets/Miss-Marple.mp3" type="audio/mp3">
+      </audio>
+
+      <div class="textBox">
+        <h2>Ohne Krimi geht die Mimi ....</h2>
+        <p class="pgrau">
+            …als ob ihr das aufregende Agentendasein nicht schon genug ist. Nein, auch in ihrer privaten Freizeit mag sie den Nervenkitzel, wenn auch nur televisonisch 😉? Die „Rosenheim Cops“, „Tatort“, „SOKO …“ u.v.m….. sind dabei genau das Richtige für ihren abendlichen kleinen Thrill-Kick. <br><br>
+            Keine Frage, dass ihr da die mysteriösen Aliona-Agententhriller und die Entführung der Molly Preston höchst willkommen waren. Nicht zu vergessen all die spannenden Mysteries der Schlawynski-Fälle, oder die krasse Geschichte von Bernd, den wir aus seiner weissen Hölle retten mussten. … Mannomann, war das aufregend…! Auf gemeinsamer Verbrecherjagd haben wir Drogendealer, Kunstdiebe und den geheimnisvollen Mr. X gestellt, den Verbleib wertvoller Brillianten aufgedeckt, die Spur eines goldenen Drachen hat uns sogar bis nach China gelockt! (Links zu den Rätseln „die Spur des goldenenDrachen“, „Los Dragones“, „das geheimnisvolle Buch“, „Brilliant Twins“ „Die tote Leiche im Heidesee“,  
+            Sei nun Du selbst der Ermittler, schau Dich hier ein wenig um und achte auf jedes Detail, dann findest Du sicher die Antworten auf unten stehende Fragen. 
+          </p>
+                
+        <p class="pgrau">
+          <div class="frage">1. Wie heißt Uhug'S Lieblings-Ermittler? Gesucht ist der Nachname (<strong>A</strong>)</div>
+          <div class="frage">2. In welcher Stadt hielt sich Larry am 23. Mai 2021 auf (<strong>B</strong>)</div>
+        </p>
+      </div>
+
+      <div class="passwortBox">
+        <form id="passwordForm">
+          <label for="password">Lösungswort:</label><br />
+          <input
+            type="text"
+            id="password"
+            name="password"
+            autocomplete="off"
+          /><br />
+          <label id="pwfalsch">Gaaanz falsch!</label><br />
+          <input type="submit" value=" prüfen " />
+        </form>
+      </div>
+      
+
+      <!-- checkPassword(this) -->
+
+      <div class="hint_container">
+        <img
+          id="hint_icon"
+          alt="Hint"
+          title="Ich habe keine Ahnung!"
+          src="/assets/hint.png"
+        />
+        <p id="hint" class="hint pgrau">weiß ich noch nicht ....</p>
+      </div>
+
+      <script src="/js/scripts.js"></script>
+    </div>
+  </body>
+</html>

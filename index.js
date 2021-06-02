@@ -105,7 +105,11 @@ const correctPassword = {
     link: "/tiere",
   },
   "/tiere": {
-    password: "uhugallesguteleipzigpferdheliosstrigidae",
+    password: "allesguteuhugleipzigpferdhelios",
+    link: "/krimi",
+  },
+  "/krimi": {
+    password: "barnabysalzburg",
     link: "/bonus",
   },
   "/bonus": {
