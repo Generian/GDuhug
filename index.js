@@ -70,6 +70,10 @@ app.get('/tiere', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/einherzfuertiere.html'));
 })
 
+app.get('/krimi', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/krimi.html'));
+})
+
 app.get('/bonus', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/bonus.html'));
 })

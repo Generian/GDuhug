@@ -32,6 +32,9 @@ body {
   background-color: rgb(78, 42, 12)
 }
 
+.bgrot {
+  background-color: rgb(92, 0, 0)
+}
 /* Formatierungen Überschrifts-Box ---------------*/
 
 .headerBox {
@@ -259,4 +262,10 @@ img {
 .imgfahrkarte {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   display: none;
+}
+
+audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+  width: 200px;
+  height: 25px;
 }
