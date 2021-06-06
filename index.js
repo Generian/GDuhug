@@ -113,7 +113,7 @@ const correctPassword = {
     link: "/krimi",
   },
   "/krimi": {
-    password: "barnabysalzburg",
+    password: "inspectorbarnaby",
     link: "/bonus",
   },
   "/bonus": {
