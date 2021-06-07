@@ -74,6 +74,10 @@ app.get('/krimi', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/krimi.html'));
 })
 
+app.get('/finale', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/finale.html'));
+})
+
 app.get('/bonus', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/bonus.html'));
 })
@@ -114,6 +118,10 @@ const correctPassword = {
   },
   "/krimi": {
     password: "inspectorbarnaby",
+    link: "/finale",
+  },
+  "/finale": {
+    password: "n4757482e01229739",
     link: "/bonus",
   },
   "/bonus": {
