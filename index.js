@@ -106,14 +106,14 @@ const correctPassword = {
   },
   "/puzzlemaniaaa": {
     password: "entspannung",
-    link: "/agententraining",
-  },
-  "/agententraining": {
-    password: "moeskeetogelb",
     link: "/tiere",
   },
   "/tiere": {
     password: "allesguteuhugleipzigpferdhelios",
+    link: "/agententraining",
+  },
+  "/agententraining": {
+    password: "moeskeetogelb",
     link: "/krimi",
   },
   "/krimi": {
