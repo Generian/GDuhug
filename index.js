@@ -1,18 +1,18 @@
 const express = require('express')
 var bodyParser = require('body-parser')
 const path = require('path')
-const livereload = require("livereload")
-const connectLivereload = require("connect-livereload")
+//const livereload = require("livereload")
+//const connectLivereload = require("connect-livereload")
 
 const PORT = process.env.PORT || 3000
 
-const liveReloadServer = livereload.createServer()
+/*const liveReloadServer = livereload.createServer()
 liveReloadServer.watch(path.join(__dirname, 'web'))
 liveReloadServer.server.once("connection", () => {
   setTimeout(() => {
     liveReloadServer.refresh("/");
   }, 100);
-});
+});*/
 
 const app = express()
 
@@ -72,6 +72,10 @@ app.get('/tiere', (req, res) => {
 
 app.get('/krimi', (req, res) => {
   res.sendFile(path.join(__dirname, 'web/pages/krimi.html'));
+})
+
+app.get('/anrufbeantworter', (req, res) => {
+  res.sendFile(path.join(__dirname, 'web/pages/AB.html'));
 })
 
 app.get('/finale', (req, res) => {
