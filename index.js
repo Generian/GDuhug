@@ -16,7 +16,7 @@ liveReloadServer.server.once("connection", () => {
 
 const app = express()
 
-app.use(connectLivereload())
+//app.use(connectLivereload())
 app.use(express.static('web/public'))
 
 var jsonParser = bodyParser.json()
