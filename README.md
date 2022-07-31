@@ -4,5 +4,5 @@
 2. Navigate into repository and run `npm install` in console
 
 # Local development
-1. Start local dev server via `npm run watch`
+1. Start local dev server via `npm run watch` or `npm run start`
 2. Open http://localhost:3000/
